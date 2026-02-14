@@ -208,6 +208,7 @@ p {
     margin-bottom: 8px;
     display: block;
     color: var(--text-main);
+    font-size: 1.2rem;
 }
 
 .project-desc {
