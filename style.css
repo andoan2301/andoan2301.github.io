@@ -125,13 +125,62 @@ p {
 }
 
 .skill-tag {
-    background-color: #E0E7FF;
-    color: var(--accent);
+    background-color: rgba(255,255,255,0.1);
+    color: var(--text-main);
     padding: 6px 14px;
     border-radius: 20px;
     font-size: 1.5rem;
     font-weight: 600;
 }
+
+/* LANGUAGES */
+.language-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+}
+
+.lang-card {
+    background: var(--card-bg);
+    padding: 15px 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    
+    
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    
+    transition: all 0.2s ease;
+}
+
+
+
+.lang-name {
+    font-weight: 700;
+    color: var(--text-main);
+    font-size: 1.2rem;
+}
+
+.lang-level {
+    font-size: 1rem;
+    color: var(--text-sub);
+    font-weight: 500;
+    background-color: rgba(0,0,0,0.05); 
+    padding: 4px 10px;
+    border-radius: 20px;
+    
+    [data-theme="dark"] & { background-color: rgba(255,255,255,0.1); }
+}
+
+
+@media (max-width: 600px) {
+    .language-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
 
 /* PROJECTS*/
 .project-grid {
